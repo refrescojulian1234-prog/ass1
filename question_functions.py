@@ -1,5 +1,5 @@
 # Maths Test Program - Question Functions
-# Added create_question and ask_question functions
+# Added create_question and ask_question functions. 
 
 import random
 import time
