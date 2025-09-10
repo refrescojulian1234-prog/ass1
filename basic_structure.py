@@ -1,5 +1,5 @@
-# Maths Test Program - Basic Structure
-# Added difficulty selection and basic question generation
+# Maths Test Program - Basic Structure for the code 
+# Added difficulty selection and basic question generation 
 
 import random
 
