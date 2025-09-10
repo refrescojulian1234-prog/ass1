@@ -1,5 +1,5 @@
 # Maths Test Program - Challenge Question
-# Added challenge question functionality
+# Added challenge question functionality. 
 
 import random
 import time
