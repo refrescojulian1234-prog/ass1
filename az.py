@@ -3,14 +3,14 @@ import time
 
 def create_question(min_num, max_num):
     """
-    Creates a random maths question with numbers between min_num and max_num.
+    A random maths question is made with numbers between min_num and max_num.
     
     Parameters:
-    min_num (int): The smallest number to use in the question
-    max_num (int): The largest number to use in the question
-    
+    min_num (int): The smallest number that is used in the question
+    max_num (int): The largest number that is used in the question
+
     Returns:
-    str: A string representing the maths question
+    str: A string that contains the maths question
     """
     num1 = random.randint(min_num, max_num)
     num2 = random.randint(min_num, max_num)
@@ -19,8 +19,8 @@ def create_question(min_num, max_num):
 
 def ask_question(question):
     """
-    Asks the user a question and records their response time.
-    
+    Records the user's response time after asking them a question.
+
     Parameters:
     question (str): The question to ask the user
     
@@ -46,8 +46,11 @@ def ask_question(question):
 
 def main():
     # Welcome message
+    print("________________________________________________________")
+    print()
     print("Welcome to Julian's Maths Test Program !")
-    print("Test your addition and subtraction skills.")
+    print("Test your addition and subtraction.")
+    print("________________________________________________________")
     print()
     
     # Difficulty selection
@@ -67,12 +70,12 @@ def main():
         choice = input("Choose difficulty (1-Easy, 2-Medium, 3-Hard): ").lower().strip()
         if choice in difficulties:
             difficulty, questions, max_num = difficulties[choice]
-            print(f"You selected {difficulty.capitalize()} difficulty.")
+            print(f"You have selected {difficulty.capitalize()} difficulty.")
             break
         else:
-            print("Invalid choice. Please try again.")
+            print("Incorrect choice. Please try again.")
     
-    print(f"The test will have {questions} questions.")
+    print(f"This test will have {questions} questions.")
     print()
     
     # Initialize variables for the test
@@ -84,10 +87,12 @@ def main():
     # Administer the test
     for i in range(1, questions + 1):
         print(f"Score: {score} | Question {i} of {questions}")
+        print(" ")
         
         # Determine the range for numbers in this question
         if i == questions:  # Challenge question
             print("Challenge question!")
+            print("")
             min_range = max_num
             max_range = max_num * 2
         else:
