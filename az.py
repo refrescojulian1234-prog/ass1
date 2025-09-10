@@ -1,4 +1,7 @@
-import random
+# Author: Julian Mendis
+# Student Number: 10685665
+# Date: 10/09/2025
+
 import time
 
 def create_question(min_num, max_num):
