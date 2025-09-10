@@ -1,5 +1,5 @@
-# Maths Test Program - Enhanced Difficulty
-# Added enhanced difficulty options and input validation
+# Maths Test Program - Enhanced Difficulty. 
+# Added enhanced difficulty options and input validation. 
 
 import random
 import time
