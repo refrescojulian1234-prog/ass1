@@ -24,7 +24,7 @@ def ask_question(question):
     return (is_correct, time_taken)
 
 def main():
-    print("Welcome to Maths Test Program!")
+    print("Welcome to Julian's Maths Test Program!")
     print("Test your addition and subtraction skills.")
     print()
     
@@ -51,7 +51,7 @@ def main():
     score = 0
     for i in range(1, questions + 1):
         print(f"Score: {score} | Question {i} of {questions}")
-        
+        print("      ")       
         # Generate and ask question
         question = create_question(1, max_num)
         is_correct, time_taken = ask_question(question)

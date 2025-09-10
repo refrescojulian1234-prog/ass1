@@ -4,8 +4,8 @@
 import random
 
 def main():
-    print("Welcome to Maths Test Program!")
-    print("Test your addition and subtraction skills.")
+    print("Welcome to Julian's Maths Test Program!")
+    print("Test your addition and subtraction.")
     print()
     
     # Difficulty selection with validation
@@ -22,9 +22,9 @@ def main():
             print(f"You selected {difficulty} difficulty.")
             break
         else:
-            print("Invalid choice. Please try again.")
-    
-    print(f"The test will have {questions} questions.")
+            print("Incorrect choice. Please try again.")
+
+    print(f"This test will have {questions} questions.")
     print()
     
     # Test loop structure

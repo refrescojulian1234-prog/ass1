@@ -9,5 +9,5 @@
 # 5. Calculate score based on correctness and speed
 # 6. Display results with breakdown
 
-print("Maths Test Program ")
+print("Julian's Maths Test Program")
 print("This program will test addition and subtraction")

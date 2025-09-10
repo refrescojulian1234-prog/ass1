@@ -4,8 +4,8 @@
 import random
 
 def main():
-    print("Welcome to Maths Test Program!")
-    print("Test your addition and subtraction skills.")
+    print("Welcome to Julian's Maths Test Program!")
+    print("Test your addition and subtraction.")
     print()
     
     # Difficulty selection placeholder
