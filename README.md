@@ -6,7 +6,7 @@
 
 A Python-based interactive math quiz program that tests users' addition and subtraction skills with multiple difficulty levels and performance tracking.
 
-## 🎯 Features
+## Features
 
 - **Multiple Difficulty Levels**: Easy, Medium, and Hard with varying question counts and number ranges
 - **Flexible Input**: Accepts numerical input (1, 2, 3) or text input (easy, medium, hard, e, m, h)
@@ -15,7 +15,7 @@ A Python-based interactive math quiz program that tests users' addition and subt
 - **Detailed Results**: Comprehensive breakdown of performance with question-by-question analysis
 - **Error Handling**: Graceful handling of invalid inputs and non-numerical responses
 
-## 📂 Project Structure
+## Project Structure
 
 ### Main Branch
 - **`az.py`** - Complete, production-ready version of the math test program
@@ -28,7 +28,7 @@ A Python-based interactive math quiz program that tests users' addition and subt
 - **`challenge_question.py`** - Addition of challenge question functionality
 - **`enhanced_difficulty.py`** - Enhanced difficulty options and input validation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.x
@@ -39,7 +39,7 @@ A Python-based interactive math quiz program that tests users' addition and subt
 python az.py
 ```
 
-## 🎮 How to Play
+## How to Play
 
 1. **Welcome Screen**: The program displays a welcome message and instructions
 2. **Difficulty Selection**: Choose from:
@@ -50,14 +50,14 @@ python az.py
 4. **Scoring**: Earn points based on correctness and speed (max 10 points per question)
 5. **Results**: View detailed performance statistics and question breakdown
 
-## 📊 Scoring System
+## Scoring System
 
 - **Correct Answer**: Base score of 10 points minus response time in seconds (minimum 1 point)
 - **Incorrect Answer**: 0 points
 - **Speed Bonus**: Faster responses earn more points
 - **Challenge Question**: Same scoring rules apply with higher difficulty numbers
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Key Functions
 - `create_question(min_num, max_num)`: Generates random math questions within specified range
@@ -71,7 +71,7 @@ python az.py
 | Medium | 10 | 10-20 | 20-40 |
 | Hard | 15 | 15-50 | 50-100 |
 
-## 📈 Development Timeline
+## Development Timeline
 
 The project evolved through several iterations:
 
@@ -83,7 +83,7 @@ The project evolved through several iterations:
 6. **Enhanced Difficulty** - Multiple input formats and improved validation
 7. **Final Version (az.py)** - Polished interface with comprehensive error handling
 
-## 🎨 Sample Output
+## Sample Output
 
 ```
 ________________________________________________________
