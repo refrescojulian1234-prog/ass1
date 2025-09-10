@@ -1,0 +1,83 @@
+Name: Julian Mendis
+ID number: 10685665
+
+START PROGRAM
+
+FUNCTION create_question(min_num, max_num):
+    generate random number num1 between min_num and max_num
+    generate random number num2 between min_num and max_num
+    randomly choose operator from (+, -)
+    RETURN string "num1 operator num2"
+
+FUNCTION ask_question(question):
+    record start_time
+    ask user for answer (integer input)
+    IF input is invalid THEN
+        set user_answer = None
+    record end_time
+    calculate time_taken = end_time - start_time
+    evaluate correct_answer = result of question
+    is_correct = (user_answer == correct_answer)
+    RETURN (is_correct, time_taken)
+
+FUNCTION main():
+    DISPLAY welcome message
+    
+    DEFINE difficulties = dictionary of choices:
+        easy → (5 questions, numbers 5–10)
+        medium → (10 questions, numbers 10–20)
+        hard → (15 questions, numbers 15–50)
+    
+    LOOP until valid choice:
+        ask user to choose difficulty
+        IF choice is in difficulties:
+            set difficulty_name, total_questions, max_number
+            DISPLAY chosen difficulty
+            EXIT loop
+        ELSE:
+            DISPLAY "Invalid choice"
+
+    DISPLAY number of questions
+    INITIALIZE score = 0
+    INITIALIZE empty lists: correct_answers, response_times, questions_list
+
+    FOR each question number i from 1 to total_questions:
+        DISPLAY current score and question number
+
+        IF i is last question:
+            DISPLAY "Challenge question!"
+            min_range = max_number
+            max_range = max_number * 2
+        ELSE:
+            min_range = max_number / 2
+            max_range = max_number
+
+        question = create_question(min_range, max_range)
+        add question to questions_list
+
+        (is_correct, time_taken) = ask_question(question)
+
+        IF is_correct:
+            points = maximum of (1, 10 - time_taken)
+            increase score by points
+            DISPLAY "Correct, time taken, and points earned"
+        ELSE:
+            DISPLAY "Incorrect, time taken, 0 points"
+
+        add is_correct to correct_answers
+        add time_taken to response_times
+
+    AFTER all questions:
+        correct_count = total number of TRUE in correct_answers
+        correct_percentage = (correct_count / total_questions) * 100
+        avg_response_time = average of response_times
+
+        DISPLAY final results:
+            score, correct answers, percentage, avg response time
+
+        DISPLAY breakdown table:
+            FOR each question i:
+                show if correct (y/n)
+                show response time in seconds
+
+END PROGRAM
